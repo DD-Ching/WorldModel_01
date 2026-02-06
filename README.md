@@ -1,37 +1,24 @@
-# Cloud-Based Neural Simulation Pipeline (Stub)
+# WorldModel 2D→3D Pipeline (Notebook Stub)
 
 MODEL EXECUTION DISABLED – STRUCTURE ONLY
 
-This project is a placeholder structure for a 2D-to-3D geometry inference and physics model selection system. All modules are **stubs only**. There is no training, no model execution, no dataset download, and no external API usage.
+這個專案已整理為**單一 Jupyter Notebook**，方便直接匯入 Kaggle 使用。內容全部是 stub，不包含模型執行、權重下載、訓練流程、或外部 API 呼叫。
 
-## Structure
+## 使用方式（Kaggle）
 
-- `src/segmentation.py`: Solid/fluid/air segmentation stub.
-- `src/geometry_inference.py`: 2D → 3D geometry inference stub.
-- `src/model_selector.py`: Physics solver selection stub.
-- `src/surrogate_solver.py`: Placeholder surrogate solver stub.
-- `src/main.py`: Demonstrates flow logic using dummy arrays.
-- `notebooks/kaggle_stub.ipynb`: Kaggle-ready notebook stub (no execution).
-- `.github/workflows/kaggle.yml`: Disabled workflow stub.
+1. 進入 Kaggle → New Notebook
+2. 匯入 `notebooks/kaggle_stub.ipynb`
+3. 此 Notebook 只包含結構與示意邏輯，不會執行模型
 
-## Notes
+## 重要限制
 
 - MODEL EXECUTION DISABLED – STRUCTURE ONLY
-- Do not assume GPU.
-- Do not assume Kaggle credentials.
-- Do not run any training or inference.
+- 不假設 GPU
+- 不需要 Kaggle 憑證
+- 不會下載資料或權重
 
-## Example (Non-executing)
+## 檔案結構
 
-The `src/main.py` file defines functions you can call from your own environment if needed, but nothing executes automatically.
-
-```
-from main import build_dummy_input, demo_pipeline_flow
-
-image_2d = build_dummy_input()
-artifacts = demo_pipeline_flow(image_2d)
-```
-
-## Safety
-
-This repository is intentionally minimal and safe. It contains only placeholders and documentation.
+- `notebooks/kaggle_stub.ipynb`: 完整 pipeline stub（單一 Notebook）
+- `.github/workflows/kaggle.yml`: 只是示意用的 workflow stub（不會觸發）
+- `requirements.txt`: 無額外相依
