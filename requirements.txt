@@ -1,0 +1,2 @@
+# MODEL EXECUTION DISABLED – STRUCTURE ONLY
+# No external dependencies required for the stub modules.

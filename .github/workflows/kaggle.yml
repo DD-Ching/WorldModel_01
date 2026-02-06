@@ -1,0 +1,13 @@
+# MODEL EXECUTION DISABLED – STRUCTURE ONLY
+# This workflow is intentionally disabled and does not trigger.
+
+name: kaggle-stub
+
+on: []
+
+jobs:
+  stub:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Placeholder
+        run: echo "MODEL EXECUTION DISABLED – STRUCTURE ONLY"
