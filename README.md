@@ -1,14 +1,14 @@
-# WorldModel 2D→3D Pipeline (Notebook Stub)
+# WorldModel 2D→3D Pipeline (Runnable Stub)
 
 MODEL EXECUTION DISABLED – STRUCTURE ONLY
 
-這個專案已整理為**單一 Jupyter Notebook**，方便直接匯入 Kaggle 使用。內容全部是 stub，不包含模型執行、權重下載、訓練流程、或外部 API 呼叫。
+這個專案已整理為**單一 Jupyter Notebook**，可直接匯入 Kaggle 執行。內容全部是 stub，不包含模型執行、權重下載、訓練流程、或外部 API 呼叫。執行內容只會處理 dummy data，輸出也都是 placeholder。
 
 ## 使用方式（Kaggle）
 
 1. 進入 Kaggle → New Notebook
 2. 匯入 `notebooks/kaggle_stub.ipynb`
-3. 此 Notebook 只包含結構與示意邏輯，不會執行模型
+3. 直接執行整份 Notebook（只會跑 stub）
 
 ## 重要限制
 
