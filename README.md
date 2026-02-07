@@ -2,18 +2,26 @@
 
 MODEL EXECUTION DISABLED – STRUCTURE ONLY
 
-這個專案已整理為**單一 Jupyter Notebook**，可直接匯入 Kaggle 執行。內容全部是 stub，不包含模型執行、權重下載、訓練流程、或外部 API 呼叫。執行內容只會處理 dummy data，輸出也都是 placeholder。
+這個專案已整理為**單一 Jupyter Notebook**，可直接匯入 Kaggle 或在本地執行。內容全部是 stub，不包含模型執行、權重下載、訓練流程、或外部 API 呼叫。執行內容只會處理 dummy data，輸出也都是 placeholder。
 
-## Kaggle 執行方式
+## 本地執行方式（超輕量）
+
+1. 開啟 `notebooks/kaggle_stub.ipynb`
+2. 保持 `PROFILE = "tiny"`，並把 `RUN_ONCE = True`
+3. 執行整份 Notebook（只跑 dummy data）
+
+## Kaggle 執行方式（超輕量）
 
 1. 進入 Kaggle → New Notebook
 2. 匯入 `notebooks/kaggle_stub.ipynb`
-3. 將 `RUN_ONCE = True` 後執行（只跑一次）
+3. 保持 `PROFILE = "tiny"`，並把 `RUN_ONCE = True`
+4. 執行一次（只跑 dummy data）
 
-## 輕量化保護
+## 輕量化保護機制
 
-- `width/height/depth_slices` 有上限
-- `max_cells` 限制總體大小，避免爆掉
+- `PROFILE` 提供 tiny/small/medium 預設
+- `validate_config` 會限制上限
+- `HARD_LIMIT_CELLS` 是硬上限，`SAFE_MODE` 會阻止執行
 
 ## 重要限制
 
